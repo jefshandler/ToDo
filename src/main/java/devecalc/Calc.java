@@ -30,10 +30,20 @@ public class Calc {
             System.out.print("Entre com o 2º numero: ");
             num2 = entrada.nextInt();
             System.out.print("O resultado é ..: ");
+
         }
         switch(opcao){
             case 1:
                 System.out.print(somarDoisNumeros(num1, num2));
+                break;
+            case 2:
+                System.out.print(subtrairDoisNumeros(num1, num2));
+                break;
+            case 3:
+                System.out.print(multiplicarDoisNumeros(num1, num2));
+                break;
+            case 5:
+                System.out.print(dividirDoisNumeros(num1, num2));
                 break;
 
             default:
@@ -47,5 +57,15 @@ public class Calc {
 
 //        System.out.println("Passou pelo metodo SomarDoisNumeros");
         return num1 + num2;
+    }
+
+    public static int subtrairDoisNumeros(int num1, int num2) {
+        return num1 - num2;
+    }
+    public static int multiplicarDoisNumeros(int num1, int num2) {
+        return num1 * num2;
+    }
+    public static int dividirDoisNumeros(int num1, int num2) {
+        return num1 - num2;
     }
 }
